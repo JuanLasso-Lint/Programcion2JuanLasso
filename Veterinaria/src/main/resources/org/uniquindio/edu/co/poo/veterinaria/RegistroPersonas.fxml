@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="477.0" prefWidth="598.0" style="-fx-background-color: #7DC6AA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.veterinaria.ViewController.RegistroPersonas">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-5.0" prefHeight="68.0" prefWidth="600.0" style="-fx-background-color: #D4A017;" text="Selección de Acción">
+         <font>
+            <Font name="OCR A Extended" size="42.0" />
+         </font>
+      </Label>
+      <HBox layoutX="73.0" layoutY="75.0" prefHeight="250.0" prefWidth="278.0" />
+      <GridPane layoutX="90.0" layoutY="75.0" prefHeight="404.0" prefWidth="431.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="93.00000610351563" minHeight="10.0" prefHeight="67.2" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="93.00000610351563" minHeight="10.0" prefHeight="28.60000000000001" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="93.00000610351563" minHeight="0.0" prefHeight="19.600006103515625" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="119.20001831054688" minHeight="0.0" prefHeight="49.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="119.20001831054688" minHeight="0.5999816894531307" prefHeight="46.599999999999994" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="112.39999389648438" minHeight="0.0" prefHeight="2.0000122070312614" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="183.20000000000005" minHeight="10.0" prefHeight="56.60003662109375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="167.40000000000003" minHeight="10.0" prefHeight="162.99996337890622" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#IrARegistroDueños" prefHeight="59.0" prefWidth="278.0" style="-fx-border-color: #D4A017; -fx-border-radius: 5; -fx-border-width: 3;" text="Registro Dueño" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="OCR A Extended" size="15.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#IrAregistroVeterinarios" prefHeight="47.0" prefWidth="278.0" style="-fx-border-color: #D4A017; -fx-border-radius: 5; -fx-border-width: 3;" text="Registro Veterinario" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <font>
+                  <Font name="OCR A Extended" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="BtnCitas" alignment="CENTER" mnemonicParsing="false" onAction="#IrregistroPesonal" prefHeight="63.0" prefWidth="299.0" style="-fx-border-color: #D4A017; -fx-border-radius: 5; -fx-border-width: 3;" text="Registro Personal" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+               <font>
+                  <Font name="OCR A Extended" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="132.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@imagenes/Logo.png.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Button fx:id="btnVolver" alignment="CENTER" contentDisplay="CENTER" layoutY="411.0" mnemonicParsing="false" onAction="#VolverInicio" prefHeight="68.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 3;" text="Salir">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

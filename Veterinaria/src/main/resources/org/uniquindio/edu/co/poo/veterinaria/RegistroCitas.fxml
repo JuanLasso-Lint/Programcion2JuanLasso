@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="492.0" prefWidth="600.0" style="-fx-background-color: #7DC6AA; -fx-border-radius: 5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.veterinaria.ViewController.RegistroCitas">
+   <children>
+      <Label alignment="CENTER" prefHeight="67.0" prefWidth="600.0" style="-fx-background-color: #D4A017;" text="REGISTRO CITAS">
+         <font>
+            <Font name="OCR A Extended" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVolver" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ValverSeeccion" prefHeight="67.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 5;" text="X">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <GridPane layoutX="31.0" layoutY="77.0" prefHeight="286.0" prefWidth="537.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ComboBox fx:id="boxDueño" onAction="#seleccionDueño" prefHeight="27.0" prefWidth="275.0" promptText="Dueño" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="Vete" onAction="#SeleccionVeterinario" prefHeight="27.0" prefWidth="275.0" promptText="Veterinario" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="Fecha" onAction="#SeleccionFecha" prefHeight="27.0" prefWidth="275.0" promptText="Seleccione fecha" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="Hora" prefHeight="27.0" prefWidth="275.0" promptText="HH : MM" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="Luagar" prefHeight="27.0" prefWidth="275.0" promptText="Lugar" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="Descripcion" prefHeight="27.0" prefWidth="275.0" promptText="Descripcion" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Escriba Hora " GridPane.rowIndex="4">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Seleccione el Veterinario" GridPane.rowIndex="2">
+               <font>
+                  <Font name="OCR A Extended" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Seleccione Fecha" GridPane.rowIndex="3">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Seleccione el Dueño" GridPane.rowIndex="1">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="ID Cita">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Descripcion De La Cita" GridPane.rowIndex="6">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Lugar" GridPane.rowIndex="5">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="iDcITA" prefHeight="27.0" prefWidth="275.0" promptText="ID CITA" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnRegistrar" alignment="CENTER" contentDisplay="CENTER" layoutX="224.0" layoutY="394.0" mnemonicParsing="false" onAction="#RegistrarCita" prefHeight="67.0" prefWidth="150.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 5;" text="Registrar">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

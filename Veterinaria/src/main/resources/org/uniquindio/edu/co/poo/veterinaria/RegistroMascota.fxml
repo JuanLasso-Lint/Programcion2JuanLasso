@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="477.0" prefWidth="598.0" style="-fx-background-color: #7DC6AA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.veterinaria.ViewController.RegistroMascota">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-5.0" prefHeight="68.0" prefWidth="600.0" style="-fx-background-color: #D4A017;" text="REGISTRO MASCOTA">
+         <font>
+            <Font name="OCR A Extended" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVolver" alignment="CENTER" contentDisplay="CENTER" layoutY="411.0" mnemonicParsing="false" onAction="#VolverInicio" prefHeight="68.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 3;" text="&lt;-">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Button>
+      <GridPane layoutX="41.0" layoutY="87.0" prefHeight="286.0" prefWidth="537.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="TxtDireccion" prefHeight="27.0" prefWidth="275.0" promptText="Num. Identificacion Veterinaria" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Num. Identificacion Veterinaria" GridPane.rowIndex="4">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="RAZA" GridPane.rowIndex="2">
+               <font>
+                  <Font name="OCR A Extended" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="EDAD" GridPane.rowIndex="3">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Nombre">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TxtNombreMascota" prefHeight="27.0" prefWidth="275.0" promptText="NOMBRES" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" />
+            <TextField fx:id="TxtRaza" prefHeight="27.0" prefWidth="275.0" promptText="RAZA" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="EdadMas" prefHeight="27.0" prefWidth="275.0" promptText="EDAD" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Dueño" GridPane.rowIndex="5">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="seleccionrEspecie" prefHeight="26.0" prefWidth="272.0" promptText="Seleccione Especie" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="ESPECIE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="SeleccioneDueño" prefHeight="26.0" prefWidth="272.0" promptText="Seleccione Al Dueño de la mascota" style="-fx-background-color: #D4A017;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="227.0" layoutY="386.0" mnemonicParsing="false" onAction="#RegistrarMascota" prefHeight="49.0" prefWidth="145.0" style="-fx-border-color: BLACK; -fx-border-radius: 5;" text="REGISTRAR">
+         <font>
+            <Font name="OCR A Extended" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
